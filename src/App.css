@@ -6,4 +6,85 @@
 
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todoList{
+  height: 80%;
+  width: 50%;
+  background-color: rgb(241, 239, 239) ;
+  border-radius: 13px;
+  box-shadow: 2px 5px 10px lightgray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#todoList form {
+  display: flex;
+  gap: 10px;
+}
+
+#todoList form button {
+  background-color: rgb(63, 140, 247);
+  color: #ffffff;
+  width: 30px;
+  height: 20px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 2px 5px 10px lightgray;
+  cursor: pointer;
+}
+
+#title{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#tasksDisplay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  height: 80%;
+  width: 100%;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+#task{
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 2px 5px 10px lightgray;
+
+}
+
+#done{
+
+margin-right: 20px;
+cursor: pointer;
+}
+
+#colorBarre{
+  height: 80%;
+  width: 7px;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+#delete {
+  margin-right: 17px;
+  cursor: pointer;
 }
