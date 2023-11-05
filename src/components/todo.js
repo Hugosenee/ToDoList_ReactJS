@@ -21,6 +21,8 @@ function Todo() {
 
         if (task.trim() === '') {
             setErreur('Please enter a task');
+        } else if(color === '') {
+            setErreur('Please enter a importance');
         } else {
             const storedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
             const tasks = { task, color}
@@ -31,13 +33,14 @@ function Todo() {
         }
     }  
 
+
     return (
         <div id='todoList'>
             <h2 id='title'>To Do List</h2>
             <form onSubmit={handleSubmit}>
                 <input type='text' name='task' placeholder='Task' value={task} onChange={handleChange} />
                 <select name="color" id="color" value={color} onChange={handleColorChange}>
-                    <option >importance</option>
+                    <option value="">importance</option>
                     <option value="red">very important</option>
                     <option value="orange">important</option>
                     <option value="yellow">not important</option>
